@@ -3,11 +3,11 @@
 namespace GhulamAli\Artisan;
 
 use Illuminate\Support\ServiceProvider;
-use GhulamAli\Artisan\Console\Console\Commands\Database\ArtisanDatabaseTableList
+use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseTableList;
 use Symfony\Component\Console\Helper\Table;
 use Illuminate\Support\Facades\DB;
 
-class ArtisanServiceProcider extends ServiceProvider
+class ArtisanServiceProvider extends ServiceProvider
 {
     public function boot()
     {
