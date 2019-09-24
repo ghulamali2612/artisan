@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ghulamali2612\\Artisan\\": "src/"
+            "GhulamAli\\Artisan\\": "src/"
         }
     },
     "scripts": {
