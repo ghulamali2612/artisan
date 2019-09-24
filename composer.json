@@ -1,7 +1,7 @@
 {
     "name": "ghulamali2612/artisan",
     "type": "library",
-    "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
+    "description": "Laravel basic artisan command to run using console",
     "keywords": ["artisan", "artisan commands", "commands", "Laravel artisan commands"],
     "homepage": "https://github.com/ghulamali2612/artisan/",
     "license": "MIT",
