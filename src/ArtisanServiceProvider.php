@@ -3,10 +3,10 @@
 namespace GhulamAli\Artisan;
 
 use Illuminate\Support\ServiceProvider;
-use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseTableList;
+use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseList;
 use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseRefresh;
-use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseTableTruncate;
-use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseTableDrop;
+use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseTruncate;
+use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseDrop;
 use GhulamAli\Artisan\Console\Commands\Log\ArtisanClearLogFile;
 use Symfony\Component\Console\Helper\Table;
 use Illuminate\Support\Facades\DB;
@@ -20,10 +20,10 @@ class ArtisanServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind('command.artisan-database:tables', ArtisanDatabaseTableList::class);
+        $this->app->bind('command.artisan-database:tables', ArtisanDatabaseList::class);
 		$this->app->bind('command.artisan-database:fresh', ArtisanDatabaseRefresh::class);
-		$this->app->bind('command.artisan-database:truncate', ArtisanDatabaseTableTruncate::class);
-		$this->app->bind('command.artisan-database:drop', ArtisanDatabaseTableDrop::class);
+		$this->app->bind('command.artisan-database:truncate', ArtisanDatabaseTruncate::class);
+		$this->app->bind('command.artisan-database:drop', ArtisanDatabaseDrop::class);
 		$this->app->bind('command.artisan-log:clear', ArtisanClearLogFile::class);
 
         $this->commands([

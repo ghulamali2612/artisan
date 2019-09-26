@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 use Symfony\Component\Console\Helper\Table;
 use Illuminate\Support\Facades\DB;
 
-class ArtisanDatabaseTableList extends Command
+class ArtisanDatabaseList extends Command
 {
     /**
      * The name and signature of the console command.

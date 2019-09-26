@@ -5,7 +5,7 @@ namespace Ghulamali\Artisan\Console\Commands\Database;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 
-class ArtisanDatabaseTableDrop extends Command
+class ArtisanDatabaseDrop extends Command
 {
     /**
      * The name and signature of the console command.
