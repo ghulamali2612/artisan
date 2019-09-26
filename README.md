@@ -18,4 +18,8 @@ GhulamAli\Artisan\ArtisanServiceProvider::class
 
 ### Usage
 
-- $ php artisan artisan-database:tables
+- $ php artisan artisan-database:tables //List of your database table
+- $ php artisan artisan-database:refresh //Truncate all database tables except migration
+- $ php artisan artisan-database:truncate table_name //Truncate requested table only
+- $ php artisan artisan-database:drop table_name //Drop the requested table
+- $ php artisan artisan-log:clear //Clear storage/logs/laravel.log file
