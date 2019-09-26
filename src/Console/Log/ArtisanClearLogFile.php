@@ -1,6 +1,6 @@
 <?php
 
-namespace GhulamAli\Artisan\Console\Commands\Log;
+namespace GhulamAli\Artisan\Console\Log;
 
 use Illuminate\Console\Command;
 

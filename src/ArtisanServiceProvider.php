@@ -3,11 +3,11 @@
 namespace GhulamAli\Artisan;
 
 use Illuminate\Support\ServiceProvider;
-use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseList;
-use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseRefresh;
-use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseTruncate;
-use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseDrop;
-use GhulamAli\Artisan\Console\Commands\Log\ArtisanClearLogFile;
+use GhulamAli\Artisan\Console\Database\ArtisanDatabaseList;
+use GhulamAli\Artisan\Console\Database\ArtisanDatabaseRefresh;
+use GhulamAli\Artisan\Console\Database\ArtisanDatabaseTruncate;
+use GhulamAli\Artisan\Console\Database\ArtisanDatabaseDrop;
+use GhulamAli\Artisan\Console\Log\ArtisanClearLogFile;
 use Symfony\Component\Console\Helper\Table;
 use Illuminate\Support\Facades\DB;
 

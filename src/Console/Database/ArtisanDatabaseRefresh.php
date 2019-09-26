@@ -1,6 +1,6 @@
 <?php
 
-namespace GhulamAli\Artisan\Console\Commands\Database;
+namespace GhulamAli\Artisan\Console\Database;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
