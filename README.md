@@ -4,7 +4,7 @@ Laravel basic artisan commands
 ### Installation
 Use Composer to install the library.
 ```
-$ composer require endroid/qr-code
+$ composer require ghulamali2612/artisan
 ```
 <br/>
 
