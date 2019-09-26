@@ -17,9 +17,17 @@ class ArtisanServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind('command.artisan-database:tables', ArtisanDatabaseTableList::class);
+		$this->app->bind('command.artisan-database:fresh', ArtisanDatabaseRefresh::class);
+		$this->app->bind('command.artisan-database:truncate', ArtisanDatabaseTableTruncate::class);
+		$this->app->bind('command.artisan-database:drop', ArtisanDatabaseTableDrop::class);
+		$this->app->bind('command.artisan-log:clear', ArtisanClearLogFile::class);
 
         $this->commands([
             'command.artisan-database:tables',
+			'command.artisan-database:fresh',
+			'command.artisan-database:truncate',
+			'command.artisan-database:drop',
+			'command.artisan-log:clear',
         ]);
     }
 }
