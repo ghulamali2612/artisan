@@ -7,7 +7,7 @@ use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseTableList;
 use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseRefresh;
 use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseTableTruncate;
 use GhulamAli\Artisan\Console\Commands\Database\ArtisanDatabaseTableDrop;
-use GhulamAli\Artisan\Console\Commands\Database\ArtisanClearLogFile;
+use GhulamAli\Artisan\Console\Commands\Log\ArtisanClearLogFile;
 use Symfony\Component\Console\Helper\Table;
 use Illuminate\Support\Facades\DB;
 
